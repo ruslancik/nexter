@@ -20,4 +20,12 @@
 
 html {
     box-sizing: border-box;
+    font-size: 62.5%; // 1 rem = 10px  10px/16px => 62.5%
+}
+
+body {
+    font-family: $font-primary;
+    color:$color-grey-dark-2;
+    font-weight: 300;
+    line-height: 1.6rem;
 }
