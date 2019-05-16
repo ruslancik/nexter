@@ -1,5 +1,4 @@
 .homes {
-    background-color: $color-secondary;
     grid-column: center-start / center-end;
 
     display: grid;
@@ -9,12 +8,26 @@
 }
 
 .home {
+    background-color: $color-grey-light-1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 
-     &__img {
+     &__image {
          width: 100%;
+         grid-column: 1 /-1;
      }
- 
-     &__detail{
- 
+
+     &__name {
+         grid-column: 1 / -1;
+
      }
+
+      &__loc,
+      &__room,
+      &__square,
+      &__price {
+
+      }
+ 
+
 }

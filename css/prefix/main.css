@@ -178,14 +178,20 @@ body {
   line-height: 3rem; }
 
 .homes {
-  background-color: #101d2c;
   grid-column: center-start / center-end;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   grid-gap: 7rem; }
 
-.home__img {
-  width: 100%; }
+.home {
+  background-color: #f9f7f6;
+  display: grid;
+  grid-template-columns: 1fr 1fr; }
+  .home__image {
+    width: 100%;
+    grid-column: 1 /-1; }
+  .home__name {
+    grid-column: 1 / -1; }
 
 .gallery {
   background-color: #54483A;
