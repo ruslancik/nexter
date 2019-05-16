@@ -164,6 +164,7 @@ body {
 
 .homes {
   grid-column: center-start / center-end;
+  margin: 8rem 0;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   grid-gap: 7rem; }
@@ -171,11 +172,30 @@ body {
 .home {
   background-color: #f9f7f6;
   display: grid;
-  grid-template-columns: 1fr 1fr; }
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-content: center; }
   .home__image {
     width: 100%;
     grid-column: 1 /-1; }
   .home__name {
+    margin: 0 auto;
+    width: 80%;
+    grid-column: 1 / -1;
+    background-color: #101d2c;
+    color: #fff;
+    padding: 2rem 3rem;
+    font-family: "Nunito", sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+    transform: translateY(-3rem);
+    letter-spacing: .1rem; }
+  .home__loc, .home__room, .home__square, .home__price {
+    padding: 2rem 2rem; }
+    .home__loc i, .home__room i, .home__square i, .home__price i {
+      color: #c69963;
+      padding-right: .5rem; }
+  .home__btn {
     grid-column: 1 / -1; }
 
 .gallery {

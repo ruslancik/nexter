@@ -1,5 +1,6 @@
 .homes {
     grid-column: center-start / center-end;
+    margin: 8rem 0;
 
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
@@ -11,6 +12,9 @@
     background-color: $color-grey-light-1;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-content: center;
+
 
      &__image {
          width: 100%;
@@ -18,7 +22,17 @@
      }
 
      &__name {
+         margin: 0 auto;
+         width: 80%;
          grid-column: 1 / -1;
+         background-color: $color-secondary;
+         color: #fff;
+         padding: 2rem 3rem;
+         font-family: $font-primary;
+         font-size: 1.5rem;
+         text-align: center;
+         transform: translateY(-3rem);
+         letter-spacing: .1rem;
 
      }
 
@@ -27,7 +41,16 @@
       &__square,
       &__price {
 
+        padding: 2rem 2rem;
+
+        & i {
+            color: $color-primary;
+            padding-right: .5rem;
+        }
+
       }
  
-
+      &__btn {
+          grid-column: 1 / -1;
+      }
 }
