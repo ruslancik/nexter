@@ -18,7 +18,7 @@ $font-display: 'Josefin Sans', sans-serif;
 
 $bp-largest : 75em; // 1200 px
 $bp-large : 62.5em; // 1000 px
-
+$bp-medium : 54.5em; // 850 px
 
 *,
 *::before,
@@ -54,6 +54,11 @@ body {
         grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8,
         [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
     
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+      grid-template-rows: 7rem calc(100vh-7rem) min-content min-content 40vw repeat(3, min-content);
+   
     }
     & > * {
         padding: 4rem;

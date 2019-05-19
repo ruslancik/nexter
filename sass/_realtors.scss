@@ -6,7 +6,10 @@
     align-content: center;
     justify-content: center;
     text-align: center;
-    
+
+    @media only screen and (max-width: $bp-medium) {
+
+    }
 
     &__list {
     display: grid;
@@ -15,6 +18,10 @@
     grid-column-gap: 1.5rem;
     align-items: center;
     justify-items: center;
+
+    @media only screen and (max-width: $bp-medium) {
+
+    }
    
     }
     &__img {
