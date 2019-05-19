@@ -11,7 +11,7 @@
     display: grid;
     grid-template-rows: 1fr min-content 6rem 1fr;
     grid-template-columns: max-content;
-    justify-items: start;
+    justify-content: center;
     grid-row-gap: 1.5rem;
 
     &__logo {
@@ -31,18 +31,21 @@
         color: $color-grey-light-1;
         font-family: $font-display;
         font-size: 2rem;
+        filter: brightness(70%);
         display: grid;
+        grid-template-rows: 1fr;
         grid-template-columns: 1fr max-content 1fr;
         grid-column-gap: 1.5rem;
-        justify-items: center;
         align-items: center;
+        justify-items: center;
+
 
         &::before,
         &::after {
+            display: block;
             content: "";
             height: 1px;
             width: 15rem;
-            display: block;
             background-color: currentColor;
         }
 

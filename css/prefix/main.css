@@ -143,7 +143,9 @@ body {
   grid-template-rows: 1fr min-content 6rem 1fr;
   grid-template-columns: -webkit-max-content;
   grid-template-columns: max-content;
-  justify-items: start;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   grid-row-gap: 1.5rem; }
   .header__logo {
     height: 3.5rem;
@@ -159,19 +161,22 @@ body {
     color: #f9f7f6;
     font-family: "Josefin Sans", sans-serif;
     font-size: 2rem;
+    -webkit-filter: brightness(70%);
+    filter: brightness(70%);
     display: grid;
+    grid-template-rows: 1fr;
     grid-template-columns: 1fr -webkit-max-content 1fr;
     grid-template-columns: 1fr max-content 1fr;
     grid-column-gap: 1.5rem;
-    justify-items: center;
     -webkit-box-align: center;
     -ms-flex-align: center;
-    align-items: center; }
+    align-items: center;
+    justify-items: center; }
     .header__seenon-text::before, .header__seenon-text::after {
+      display: block;
       content: "";
       height: 1px;
       width: 15rem;
-      display: block;
       background-color: currentColor; }
   .header__seenon-img {
     display: grid;
@@ -185,7 +190,35 @@ body {
 
 .realtors {
   background-color: #101d2c;
-  grid-column: col-start 7 / full-end; }
+  padding: 3rem;
+  grid-column: col-start 7 / full-end;
+  display: grid;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  text-align: center; }
+  .realtors__list {
+    display: grid;
+    grid-template-columns: -webkit-min-content -webkit-max-content;
+    grid-template-columns: min-content max-content;
+    grid-row-gap: 5vh;
+    grid-column-gap: 1.5rem;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    justify-items: center; }
+  .realtors__img {
+    height: 7rem;
+    border-radius: 50%; }
+  .realtors__detail {
+    display: grid;
+    grid-template-rows: 1fr 1fr; }
+  .realtors__sold {
+    text-transform: uppercase;
+    color: #aaa;
+    font-size: 1.2rem; }
 
 .features {
   grid-column: center-start / center-end;
