@@ -57,7 +57,7 @@ body {
     }
 
     @media only screen and (max-width: $bp-medium) {
-      grid-template-rows: 7rem calc(100vh-7rem) min-content min-content 40vw repeat(3, min-content);
+      grid-template-rows: 7rem 100vh min-content min-content 40vw repeat(3, min-content);
    
     }
     & > * {

@@ -8,7 +8,7 @@
     text-align: center;
 
     @media only screen and (max-width: $bp-medium) {
-
+        grid-column: 1 /-1;
     }
 
     &__list {
@@ -20,7 +20,7 @@
     justify-items: center;
 
     @media only screen and (max-width: $bp-medium) {
-
+        grid-template-columns: repeat(6, minmax(min-content,max-content));
     }
    
     }
