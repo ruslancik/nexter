@@ -22,8 +22,11 @@
     @media only screen and (max-width: $bp-medium) {
         grid-template-columns: repeat(6, minmax(min-content,max-content));
     }
-   
+    @media only screen and (max-width: $bp-small) {
+        grid-template-columns: min-content max-content;
     }
+    
+}
     &__img {
         height: 7rem;
         border-radius: 50%;
