@@ -128,8 +128,60 @@ body {
     transform: translateY(1.3rem); }
 
 .header {
-  background-color: #54483A;
-  grid-column: full-start / col-end 6; }
+  grid-column: full-start / col-end 6;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(16, 29, 44, 0.9)), to(rgba(16, 29, 44, 0.9))), url(/img/hero.jpeg);
+  background-image: -webkit-linear-gradient(left, rgba(16, 29, 44, 0.9), rgba(16, 29, 44, 0.9)), url(/img/hero.jpeg);
+  background-image: -o-linear-gradient(left, rgba(16, 29, 44, 0.9), rgba(16, 29, 44, 0.9)), url(/img/hero.jpeg);
+  background-image: linear-gradient(to right, rgba(16, 29, 44, 0.9), rgba(16, 29, 44, 0.9)), url(/img/hero.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 8rem;
+  padding-top: 4rem;
+  display: grid;
+  grid-template-rows: 1fr -webkit-min-content 6rem 1fr;
+  grid-template-rows: 1fr min-content 6rem 1fr;
+  grid-template-columns: -webkit-max-content;
+  grid-template-columns: max-content;
+  justify-items: start;
+  grid-row-gap: 1.5rem; }
+  .header__logo {
+    height: 3.5rem;
+    width: auto;
+    justify-self: center;
+    -ms-flex-item-align: center;
+    align-self: center; }
+  .header__btn {
+    -ms-flex-item-align: start;
+    align-self: start;
+    justify-self: start; }
+  .header__seenon-text {
+    color: #f9f7f6;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 2rem;
+    display: grid;
+    grid-template-columns: 1fr -webkit-max-content 1fr;
+    grid-template-columns: 1fr max-content 1fr;
+    grid-column-gap: 1.5rem;
+    justify-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    .header__seenon-text::before, .header__seenon-text::after {
+      content: "";
+      height: 1px;
+      width: 15rem;
+      display: block;
+      background-color: currentColor; }
+  .header__seenon-img {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 1.5rem;
+    justify-items: center; }
+    .header__seenon-img img {
+      height: 2.5rem;
+      -webkit-filter: brightness(70%);
+      filter: brightness(70%); }
 
 .realtors {
   background-color: #101d2c;
